@@ -2,6 +2,35 @@
 
 ## Step 0 – Setup SSH-Key When creating Server
 
+```
+ssh-keygen
+ls ~/.ssh
+cat ~/.ssh/id_rsa.pub
+```
+
+(Deploy to VPS)[https://gist.github.com/mokhosh/a63558d916a337c31f492f0cc0cab864]
+
+### Step 0.1 — Copy the Public Key to Ubuntu Server
+
+Use `ssh-copy-id username@remote_host` to upload ssh credentials to ubuntu server
+
+`ssh-copy-id username@remote_host`
+
+(Public Keys to Ubuntu Server)[https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804#step-2-%E2%80%94-copy-the-public-key-to-ubuntu-server]
+
+### Step 0.2 — Authenticate to Ubuntu Server Using SSH Keys
+
+Authenticate using:
+
+`ssh username@remote_host`
+
+(Authenticate to Ubuntu Server)[https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804#step-3-%E2%80%94-authenticate-to-ubuntu-server-using-ssh-keys]
+
+### Step 0.3 — Disable pwd authentication
+
+(Digital Ocean Tutorial - Disable pwd authentication)[https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804#step-4-%E2%80%94-disable-password-authentication-on-your-server]
+
+
 ## Step 1 – Installing the Nginx Web Server
 
 ```
@@ -69,5 +98,22 @@ Check if composer is working:
 * Open your terminal and write `# ssh root@10.0.0.1`
 * You will see now welcome message from your server
 
+## Step 4 - Installing MySQL to Manage Site Data
+
+(Installing MySQL to Manage Site Data)[https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04#step-2-%E2%80%93-installing-mysql-to-manage-site-data]
+
+### Step 4.1 - Install phpmyadmin
+
+Install `phpmyadmin` with `sudo apt install phpmyadmin`
+
+Secure it!
+
+(How to Install and Secure phpMyAdmin with Nginx on an Ubuntu 18.04 server)[https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-with-nginx-on-an-ubuntu-18-04-server]
+
+## Step 5 - Installing PHP
+
+## Step 6 - Installing GIT
+
+## Step 7 - Setup GIT Hooks
 
 
