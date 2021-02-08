@@ -116,4 +116,6 @@ Secure it!
 
 ## Step 7 - Setup GIT Hooks
 
+(Push deploy a Laravel app for free with GitHub Actions)[https://laravel-news.com/push-deploy-with-github-actions]
+
 
