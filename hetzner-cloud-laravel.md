@@ -90,7 +90,7 @@ Check if composer is working:
 
 `composer`
 
-(DigitalOcean - Install composer)[https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-18-04]
+[DigitalOcean - Install composer](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-18-04)
 
 ## Step 3 – Login to your server
 
